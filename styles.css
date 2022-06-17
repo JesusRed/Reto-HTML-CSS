@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Poppins;
+  src: url('https://fonts.googleapis.com');
+}
+
 div#collapsingNavbar3 ul.nav {
   padding: 2rem;
 }
@@ -18,12 +23,12 @@ div#text-center {
 p#text-navy,
 p#text-brown,
 span#extra-text,
-p#text-enum {
+p#text-enum, div#text-with-button p.h1 strong, p.pregnant-women strong {
   font-size: calc(1.525rem + 0.3vw);
 }
 
 @media (min-width: 1024px) {
-  p#text-navy {
+  p#text-navy, div#text-with-button p.h1 strong, p.pregnant-women strong  {
     font-size: 3.5rem;
   }
   span#extra-text {
@@ -68,7 +73,9 @@ p#text-list {
 }
 
 p#text-brown {
-  color: brown;
+  color: #AE4B2B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 @media (max-width: 1023px) {
@@ -91,12 +98,6 @@ p#text-enum {
 img#pregnant-woman {
   margin: auto;
 }
-
-div.pregnant-women {
-  padding: 3%;
-}
-
-
 
 button.btn.btn-primary.active {
   background-color: #ae4b2b;
@@ -125,7 +126,7 @@ div#list-icon {
 }
 
 a#button-navy {
-  background-color: navy;
+  background-color: #1B3661;
 }
 
 img#image-bg-section {
@@ -152,22 +153,90 @@ div#bg-color {
   background-color: beige;
 }
 
-.container.pregnant-women {
+div.container.pregnant-women {
+  padding: 2%;
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-  align-items: flex-start;
   flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-div.bg-color-beige{
+div.bg-color-beige {
   padding-top: 7%;
 }
 
-div#bg-color-green{
+div#bg-color-green {
   background-color: aquamarine;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
+img#image-bg-green {
+  max-width: 50%;
+  height: auto;
+  padding: 3%;
+}
 
+div.image-with-text-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  div.image-with-text-flex {
+    flex-direction: column;
+  }
+}
+
+nav.navbar,
+span#extra-text,
+p.text-start,
+p.extra-test,
+p#text-pregnant-woman,
+p#text-third,
+h4#list-icon,
+button {
+  font-family: Roboto;
+}
+
+a#button-orange{
+  background-color: #ae4b2b;
+}
+
+p.pregnant-women strong{
+  font-family: 'Poppins', sans-serif;
+  color: #1B3661;
+}
+
+.btn{
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-right: 30px;  
+}
+
+div#text-with-button p.h1 strong{
+  color: #AE4B2B;
+}
+
+strong#biggest-ask{
+  color: #1B3661;
+}
+
+i.bi.bi-check-circle {
+  padding-right: 15px;
+}
+
+div.bg-color-beige{
+  background-color: #F8F5F2;
+}
+
+div#button-navy a.orange{
+  background-color: #AE4B2B;
+}
+
+div#bg-color-green{
+  background-color: #ABBFB5;
+}
